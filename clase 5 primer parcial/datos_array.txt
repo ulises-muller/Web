@@ -1,0 +1,18 @@
+
+name: "Maria",
+lastname: "Perez",
+age: 32,
+email: "superadmin@gmail.com",
+role: "super-admin"
+
+name: "Juan",
+lastname: "Perez",
+age: 25,
+email: "admin@gmail.com",
+role: "admin"
+
+name: "Nicolas",
+lastname: "Macchioli",
+age: 32,
+email: "user@gmail.com",
+role: "user"

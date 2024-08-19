@@ -1,0 +1,64 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+#bar{
+    display: flex;
+    width: 100%;
+    background-color: azure;
+    top: 0;
+    position: sticky;
+    justify-content: space-between;
+}
+img{
+    height: 3pc;
+}
+.user2{
+    display: flex;
+    align-items: center;
+}
+.usar{
+    padding-right: 1pc;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+button{
+    padding: 1pc;
+    margin: 1pc;
+}
+.text{
+    padding: 1pc;
+}
+.flotante{
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1pc;
+    padding: 1pc;
+    background-color: aqua;
+    border-radius: 50%;
+}
+@media screen and (width < 768px) {
+    body{
+        background-color: blue;
+    }
+    .logo{
+        display: none;
+    }
+    .box{
+        flex-direction: column;
+    }
+    #bar{
+        justify-content: center;
+    }
+
+}

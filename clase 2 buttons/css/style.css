@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+.main-conteiner{
+    border: 2px solid black;
+    background-color: aquamarine;
+    height: 500px;
+    width: 150vh;
+    text-align: center;
+}
+
+.actions-buttons{
+    background-color: tomato;
+    border: 1px solid brown;
+    margin: 20px 80px;  /*izquierda y derecha y arriba y abajo */
+    height: 50%;
+}
+.disparador-js{
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: blueviolet;
+}
+.disparador-js:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+}
+.main-title{
+    font-family: "Bungee Hairline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 

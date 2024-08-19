@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* PONER MEDIA QUERIES AL FINAL YA QUE A IGUAL ESPECIFIDAD SE TOMA EL ULTIMO LEIDO */
+h1{
+    font-family: sans-serif;
+}
+.section-responsive{
+    background-color: crimson;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+@media screen and (width < 500px){
+    /*Cuando se cumpla esta condicion vamos a aplicar un conjunto de selectores y propiedades específicas  */
+    .section-responsive{
+        background-color: darkseagreen;
+        color: white;
+    }
+}
+
+@media screen and (width > 1000px){
+    .section-responsive{
+        background-color: royalblue;
+        display: flex;
+    }
+}

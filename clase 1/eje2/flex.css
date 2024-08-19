@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padre{
+    background-color: crimson;
+    height: 500px;
+    padding: 1rem;
+    display: flex; /* Por defecto row */
+    flex-direction: row; /* row-reverse / column-reverse */
+    align-items: start; /* Por defecto stretch que ocupa todo el espacio que le da el padre */
+    flex-wrap: wrap; /* Para evitar desbordes */
+    /* justify-content: space-between; */
+    /* gap: 1rem; */
+}
+.hijo{
+    background-color: royalblue;
+    border: 1px solid black;
+    padding: 1rem;
+    color: white;
+    font-family: sans-serif;
+
+    /* flex: 1; */ /* Reparte de manera equitativa el espacio sobrante */
+}

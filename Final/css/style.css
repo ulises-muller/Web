@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #686868;
+    --secondary-color: #5ebdb3;
+}
+
+.main-container{
+    display:flex;
+    background-color:rgb(173, 173, 173);
+}
+
+.form-container{
+    background-color: var(--primary-color) ;
+    color: whitesmoke;
+    border-radius: 20px;
+    width: 450px;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+.form-edit{
+    background-color: var(--secondary-color);
+}
+.table-container{
+    width: 100%;
+}
+.product-table{
+    td:nth-child(n+2):nth-child(-n+3){
+        text-align: center;
+    }
+    th{
+        background-color: var(--primary-color);
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+    } 
+    td{
+        vertical-align: middle;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+    tfoot td{
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-align: right;
+        font-style: italic;
+
+    }
+}
+.barra-acciones{
+    th:first-child{
+        border-top-left-radius: 10px;
+    }
+    th:last-child{
+        border-top-right-radius: 10px;
+    }
+}
+.botones{
+    width: 10rem;
+}
+
+.product-image img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 30%;
+}
+.whatsapp-logo{
+    width: 45px;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+ .whatsapp-logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+}
+.whatsapp-contact{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+
+/*! pag home */
+
+.parte-busqueda{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto; 
+    flex-direction:column ;
+    width: 90%;
+}
+.titulo-busqueda{
+    font-family: Verdana, sans-serif;
+    padding: 30px;
+    font-size: 40px;
+    font-style: italic;
+
+}
+.barra{
+    padding: 15px;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+    min-width: 300px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all .1s ease-in-out;
+}
+.tarjetas{
+    justify-content: center;
+}
+.tarjeta{
+    padding-top: 30px;
+    padding-left: 30px;
+    max-width: 330px;
+}
+.row{
+    --bs-gutter-x: 0;
+}
+.card{
+    height: 460px;
+    width: 270px;
+}
+
+.card img{
+    width: 268px;
+    height: 268px;
+}
+.main-home{
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    width: 85%;
+}
+.main-dibu{
+    display: flex;
+    margin: auto;
+}
+.nav-dibu{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.imagen-dibu{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.texto-dibu {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;  
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 50%);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 5rem;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+@media screen and (width < 1150px){
+    .ocultar{
+        display: none;
+    }
+    .barra-acciones{
+    th:nth-child(2){
+        border-top-left-radius: 10px;
+    }
+    th:nth-child(5){
+        border-top-right-radius: 10px;
+    }
+}
+}
+    
+
+@media screen and (width < 950px){
+
+    .tarjetas{
+        justify-content: center;
+    }
+
+    .main-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-container{
+        width:50%;
+    }
+
+    .user-table{
+        overflow-x: auto;
+    }
+}

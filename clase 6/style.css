@@ -1,0 +1,21 @@
+
+.mainconteiner{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.row{
+    width: 450px;
+    min-width: 450px;
+}
+.table{
+    width: 40%;
+    height: 100%;
+}
+
+@media screen and (width < 768px) {
+   .mainconteiner{
+        flex-direction: column;
+        align-items: center;
+    }
+}

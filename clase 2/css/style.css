@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+i{
+    padding-right: 1rem;
+}
+.main-header{
+    background-color: rgb(85, 47, 190);
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.padre{
+    margin: 1rem;
+    border: 1px solid gray;
+    background-color: aliceblue;
+    padding: 1rem;
+    position: relative;
+}
+.hijo{
+    border: 2px solid yellow;
+    background-color: rgb(233, 159, 63);
+    padding: 1rem;
+}
+.hijo-1{
+    background-color: bisque;
+    border-color: beige;
+    position: absolute;
+    right: 4rem;
+    top: 20px;
+}
+.hijo-2{
+    background-color: rgb(240, 210, 166);
+    border-color:aquamarine;
+}
+
+.whatsapp-logo{
+    width: 45px;
+    filter: drop-shadow(3px 3px 3px black);
+}
+
+ .whatsapp-logo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .1s ease-in-out;
+}
+.whatsapp-contact{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
